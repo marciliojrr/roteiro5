@@ -1,5 +1,5 @@
 #include <iostream>
-#inclide <string>
+#include <string>
 
 using namespace std;
 
@@ -20,18 +20,18 @@ public:
         } else {}
         salario = sal;
     }
-    char getNome (){
+    string getNome (){
         return nome;
     }
-    char getSobrenome(){
+    string getSobrenome(){
         return sobrenome;
     }
     double getSalario(){
         return salario;
     }
     Empregado(){
-        setNome("Vazio")
-        setSobrenome("Vazio")
+        setNome("Vazio");
+        setSobrenome("Vazio");
         setSalario(0.0);
     }
     Empregado (string n, string sn, double sal){
@@ -40,4 +40,14 @@ public:
         setSalario(sal);
     }
 };
-
+int main (){
+    string n, sn;
+    double sal;
+    Empregado EmpregadoTest("nome", "sobrenome", 900.00);
+    n = EmpregadoTest.getNome();
+    sn = EmpregadoTest.getSobrenome();
+    sal = EmpregadoTest.getSalario();
+    cout << "Empregado" << endl <<"Nome: " << n << " " << sn << endl;
+    cout << "Salario" << endl << "R$: " << sal << endl;
+    return 0;
+}
