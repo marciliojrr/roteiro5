@@ -41,13 +41,13 @@ public:
     }
 };
 int main (){
-    string n, sn;
-    double sal;
+    string n1, sn1;
+    double sal1;
     Empregado EmpregadoTest("nome", "sobrenome", 900.00);
-    n = EmpregadoTest.getNome();
-    sn = EmpregadoTest.getSobrenome();
-    sal = EmpregadoTest.getSalario();
-    cout << "Empregado" << endl <<"Nome: " << n << " " << sn << endl;
-    cout << "Salario" << endl << "R$: " << sal << endl;
+    n1 = EmpregadoTest.getNome();
+    sn1 = EmpregadoTest.getSobrenome();
+    sal1 = EmpregadoTest.getSalario();
+    cout << "Empregado" << endl <<"Nome: " << n1 << " " << sn1 << endl;
+    cout << "Salario" << endl << "R$: " << sal1 << endl;
     return 0;
 }
